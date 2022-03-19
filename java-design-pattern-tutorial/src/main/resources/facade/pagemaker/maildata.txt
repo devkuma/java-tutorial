@@ -1,0 +1,3 @@
+devkuma@devkuma.com=devkuma
+ariakuma@devkuma.com=ariakuma
+kimkc@devkuma.com=kim
