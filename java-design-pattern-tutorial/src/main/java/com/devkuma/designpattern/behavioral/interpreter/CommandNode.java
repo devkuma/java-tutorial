@@ -5,6 +5,7 @@ public class CommandNode extends Node {
 
     private Node node;
 
+    @Override
     public void parse(Context context) throws Exception {
         if (context.currentToken().equals("repeat")) {
             node = new RepeatCommandNode();

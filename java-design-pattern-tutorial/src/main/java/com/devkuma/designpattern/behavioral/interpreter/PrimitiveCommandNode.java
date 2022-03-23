@@ -5,6 +5,7 @@ public class PrimitiveCommandNode extends Node {
 
     private String name;
 
+    @Override
     public void parse(Context context) throws Exception {
         name = context.currentToken();
         context.skipToken(name);
