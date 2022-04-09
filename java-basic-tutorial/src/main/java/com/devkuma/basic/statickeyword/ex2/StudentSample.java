@@ -1,14 +1,10 @@
-package com.devkuma.basic.statickeyword.ex1;
+package com.devkuma.basic.statickeyword.ex2;
 
-public class StudentSample2 {
+public class StudentSample {
 
     public static void main(String[] args) {
-        Student devkuma = new Student("devkuma");
-        Student araikuma = new Student("araikuma");
-        Student kimkc = new Student("kimkc");
-
-        System.out.println(devkuma.number++);
-        System.out.println(araikuma.number++);
-        System.out.println(kimkc.number);
+        Student.printNumber();
+        Student.number++;
+        Student.printNumber();
     }
 }
