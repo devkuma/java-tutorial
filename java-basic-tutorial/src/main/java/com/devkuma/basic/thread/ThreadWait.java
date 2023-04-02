@@ -1,6 +1,6 @@
-package com.devkuma.basic.thread.wait;
+package com.devkuma.basic.thread;
 
-public class ThreadA extends Thread {
+public class ThreadWait extends Thread {
     // 해당 쓰레드가 실행되면 자기 자신의 모니터링 락을 획득
     // 5번 반복하면서 0.5초씩 쉬면서 total에 값을 누적
     // 그후에 notify()메소드를 호출하여 wiat하고 있는 쓰레드를 깨운다.
@@ -25,7 +25,7 @@ public class ThreadA extends Thread {
     public static void main(String[] args) {
         // 쓰레드 A를 생성후에 start한다.
         // 해당 쓰레드가 실행되면, 해당 쓰레드는 run 메소드 안에서 자신의 모니터링 락을 획득
-        ThreadA a = new ThreadA();
+        ThreadWait a = new ThreadWait();
         a.start();
 
         // b에 대하여 동기화 블럭을 설정

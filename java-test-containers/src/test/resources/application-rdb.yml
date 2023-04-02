@@ -1,0 +1,12 @@
+spring:
+  config:
+    import:
+      - classpath:/local/tidb.yml
+
+
+  datasource:
+    schema: classpath:data/schema.sql
+# initialization-mode: always
+
+nebula:
+  init: false
