@@ -4,6 +4,10 @@ import lombok.Data;
 
 @Data
 public class DataTutorial {
+
+    private final String required;
+    private int number;
+
     public static void main(String[] args) {
         DataTutorial a = new DataTutorial("devkuma");
         a.setNumber(300);
@@ -14,7 +18,4 @@ public class DataTutorial {
         System.out.println("a = " + a);
         System.out.println(a.equals(b));
     }
-
-    private final String required;
-    private int number;
 }
